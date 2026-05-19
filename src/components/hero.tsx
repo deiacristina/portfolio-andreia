@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
+    <section className="min-h-[100svh] flex items-center relative overflow-hidden">
 
       <div className="absolute top-20 right-20 w-[400px] h-[400px] bg-violet-600/20 blur-[120px] rounded-full" />
 
@@ -36,7 +36,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-4 mt-10">
 
-            <button className="bg-violet-600 hover:bg-violet-500 transition-all hover:scale-105 px-8 py-4 rounded-2xl font-medium">
+            <button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:bg-violet-500 transition-all hover:scale-105 px-8 py-4 rounded-2xl font-medium">
 
               Ver Projetos
 
@@ -62,7 +62,7 @@ export function Hero() {
               src="/images/andreia.png"
               alt="Andreia"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               priority
             />
 

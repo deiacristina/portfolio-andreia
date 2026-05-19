@@ -1,6 +1,6 @@
 export function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#050816]/70 backdrop-blur-xl border-b border-white/5">
 
       <div className="container-custom h-20 flex items-center justify-between">
 
