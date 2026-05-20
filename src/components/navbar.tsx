@@ -1,53 +1,99 @@
+"use client";
+
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const navItems = [
+  {
+    label: "Sobre",
+    href: "#about",
+  },
+  {
+    label: "Tecnologias",
+    href: "#tech",
+  },
+  {
+    label: "Experiência",
+    href: "#experience",
+  },
+  {
+    label: "Projetos",
+    href: "#projects",
+  },
+  {
+    label: "Contato",
+    href: "#contact",
+  },
+];
+
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#050816]/70 backdrop-blur-xl border-b border-white/5">
+    <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
 
-      <div className="container-custom h-20 flex items-center justify-between">
+      <nav className="container-custom h-20 flex items-center justify-between">
 
-        <div>
-          <h2 className="text-xl font-bold tracking-wide">
-            Andréia
-            <span className="text-violet-500">.</span>
-          </h2>
+        <a
+          href="#"
+          className="text-2xl font-bold"
+        >
+          <span className="gradient-text">
+            Andréia Alves
+          </span>
+        </a>
+
+        {/* Desktop */}
+        <div className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
+
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="hover:text-violet-400 transition"
+            >
+              {item.label}
+            </a>
+          ))}
+
         </div>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
+        {/* Mobile Button */}
+        <button
+          className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <X size={28} />
+          ) : (
+            <Menu size={28} />
+          )}
+        </button>
 
-          <a
-            href="#about"
-            className="hover:text-white transition"
-          >
-            Sobre
-          </a>
+      </nav>
 
-          <a
-            href="#experience"
-            className="hover:text-white transition"
-          >
-            Experiência
-          </a>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden border-t border-white/10 bg-zinc-950/95 backdrop-blur-xl">
 
-          <a
-            href="#projects"
-            className="hover:text-white transition"
-          >
-            Projetos
-          </a>
+          <div className="flex flex-col p-6 gap-6">
 
-          <a
-            href="#contact"
-            className="hover:text-white transition"
-          >
-            Contato
-          </a>
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-zinc-300 hover:text-violet-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
 
-        </nav>
+          </div>
 
-        <div className="md:hidden text-sm text-zinc-300">
-            Menu
         </div>
+      )}
 
-      </div>
     </header>
   );
 }

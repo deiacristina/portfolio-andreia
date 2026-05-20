@@ -15,7 +15,7 @@ const technologies = [
 
 export function TechStack() {
   return (
-    <section className="pb-32">
+    <section id="tech" className="pb-32">
       <div className="container-custom">
 
         <div className="mb-14">
