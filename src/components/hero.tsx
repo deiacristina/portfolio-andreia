@@ -6,7 +6,7 @@ export function Hero() {
 
       <div className="absolute top-20 right-20 w-[400px] h-[400px] bg-violet-600/20 blur-[120px] rounded-full" />
 
-      <div className="container-custom grid lg:grid-cols-2 gap-20 items-center pt-20">
+      <div className="container-custom grid lg:grid-cols-2 gap-14 lg:gap-20 items-center pt-20">
 
         <div>
 
@@ -14,19 +14,19 @@ export function Hero() {
             ✨ Frontend Developer & Tech Creator
           </span>
 
-          <h1 className="text-6xl lg:text-7xl font-bold leading-tight mt-8">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mt-8">
 
             Desenvolvendo
             <span className="gradient-text block">
               interfaces modernas
             </span>
 
-             com Angular, UX e
+            com Angular, UX e
             performance.
 
           </h1>
 
-          <p className="text-zinc-400 text-xl mt-8 max-w-xl leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-zinc-400 mt-8 max-w-xl leading-relaxed">
 
             Desenvolvedora Frontend com experiência
             em Angular, UI moderna e experiência
@@ -37,7 +37,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-4 mt-10">
 
-            <button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:bg-violet-500 transition-all hover:scale-105 px-8 py-4 rounded-2xl font-medium">
+            <button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:scale-105 transition-all px-8 py-4 rounded-2xl font-medium">
 
               Ver Projetos
 
@@ -53,11 +53,20 @@ export function Hero() {
 
         </div>
 
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center mt-14 lg:mt-0">
 
-          <div className="absolute w-[450px] h-[450px] bg-violet-600/20 blur-[100px] rounded-full" />
+          <div className="absolute w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] bg-violet-600/20 blur-[100px] rounded-full" />
 
-          <div className="relative w-[420px] h-[520px] rounded-[32px] overflow-hidden border border-violet-500/20 bg-zinc-900">
+          <div className="
+            relative
+            w-[320px] h-[420px]
+            sm:w-[380px] sm:h-[480px]
+            lg:w-[420px] lg:h-[520px]
+            rounded-[32px]
+            overflow-hidden
+            border border-violet-500/20
+            bg-zinc-900
+          ">
 
             <Image
               src="/images/andreia.png"

@@ -12,7 +12,7 @@ export function About() {
             Sobre mim
           </span>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-5xl font-bold mt-4">
             Quem é Andréia?
           </h2>
 

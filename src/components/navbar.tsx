@@ -11,7 +11,7 @@ export function Navbar() {
           </h2>
         </div>
 
-        <nav className="hidden md:flex items-center gap-10 text-sm text-zinc-300">
+        <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
 
           <a
             href="#about"
@@ -42,6 +42,10 @@ export function Navbar() {
           </a>
 
         </nav>
+
+        <div className="md:hidden text-sm text-zinc-300">
+            Menu
+        </div>
 
       </div>
     </header>

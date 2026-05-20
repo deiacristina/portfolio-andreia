@@ -19,7 +19,7 @@ export function Contact() {
             Contato
           </span>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-5xl font-bold mt-4">
             Vamos construir algo incrível?
           </h2>
 
