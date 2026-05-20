@@ -3,20 +3,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Andréia Cristina | Frontend Developer",
+
   description:
-    "Desenvolvedora Frontend especialista em Angular, interfaces modernas, UX e tecnologia. Mestranda em Computação Aplicada pela USP.",
+    "Desenvolvedora Frontend em Angular, React, TypeScript e interfaces modernas. Mestranda na USP e criadora de conteúdo tech.",
 
   keywords: [
     "Frontend Developer",
     "Angular Developer",
-    "Desenvolvedora Frontend",
-    "Angular",
-    "React",
-    "Next.js",
+    "React Developer",
     "TypeScript",
-    "UX",
-    "USP",
-    "Programadora",
+    "Next.js",
+    "Angular",
+    "Desenvolvedora Frontend",
+    "Andreia Cristina",
   ],
 
   authors: [
@@ -29,19 +28,21 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Andréia Cristina | Frontend Developer",
+
     description:
-      "Frontend Developer com experiência em Angular, UX e interfaces modernas.",
+      "Desenvolvedora Frontend em Angular, React e TypeScript.",
 
-    url: "https://andreia-alves.netlify.app",
+    url:
+      "https://andreiacristina.netlify.app",
 
-    siteName: "Portfólio Andréia Cristina",
+    siteName:
+      "Andréia Cristina Portfolio",
 
     images: [
       {
         url: "/images/andreia.png",
         width: 1200,
         height: 630,
-        alt: "Andréia Cristina",
       },
     ],
 
@@ -57,7 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
