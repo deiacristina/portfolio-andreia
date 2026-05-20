@@ -5,7 +5,7 @@ export function Footer() {
       <div className="container-custom flex flex-col md:flex-row justify-between items-center gap-4">
 
         <p className="text-zinc-500 text-sm">
-          © 2026 Andréia Cristina.
+          © 2026 Andréia Alves.
           Todos os direitos reservados.
         </p>
 

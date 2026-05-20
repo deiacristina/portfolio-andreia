@@ -16,12 +16,13 @@ export function Hero() {
 
           <h1 className="text-6xl lg:text-7xl font-bold leading-tight mt-8">
 
-            Construindo
+            Desenvolvendo
             <span className="gradient-text block">
-              experiências digitais
+              interfaces modernas
             </span>
 
-            com design e tecnologia.
+             com Angular, UX e
+            performance.
 
           </h1>
 
