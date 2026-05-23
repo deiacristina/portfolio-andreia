@@ -69,7 +69,7 @@ export function About() {
                 USP
               </h4>
               <p className="text-zinc-400 mt-2">
-                Mestrado em Computação Aplicada
+                Mestranda em Computação Aplicada
               </p>
             </div>
 

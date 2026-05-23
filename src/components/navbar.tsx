@@ -43,7 +43,6 @@ export function Navbar() {
           </span>
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
 
           {navItems.map((item) => (
@@ -58,7 +57,6 @@ export function Navbar() {
 
         </div>
 
-        {/* Mobile Button */}
         <button
           className="md:hidden"
           onClick={() => setIsOpen(!isOpen)}
